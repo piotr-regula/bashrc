@@ -26,3 +26,4 @@ export INDENT=4
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 
 . ~/.bash_config/aliases.bash
+. ~/.bash_config/utilityFunctions.bash
