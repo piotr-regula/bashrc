@@ -85,13 +85,12 @@ function gvimf()
     gvim `echo $1 |  sed 's/\([^:]*\):\([0-9]*\).*/\1 +\2/'`
 }
 
-
 function f()
 {
     if [ $# == 2 ]; then
-    find $1 -iname '*'$2'*'  ;
+    find $1  -iname '*'$2'*'  ;
     else
-    find . -iname '*'$*'*' |gf ;
+    find .  -iname '*'$*'*' | gf ;
     fi
 }
 
@@ -103,3 +102,4 @@ function Find()
     find . -type f -iname '*'$*'*'  ;
     fi
 }
+

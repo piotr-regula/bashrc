@@ -1,4 +1,4 @@
-. ~/utils/variousFunc.bash
+. ~/.bash_config/utilityFunctions.bash
 
 if [ -z "$PS1" ]; then
     export PS1=

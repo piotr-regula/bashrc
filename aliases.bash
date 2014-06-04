@@ -12,7 +12,7 @@ alias gcnot='find . -regex "\(.*\.cpp\)\|\(.*\.hpp\)\|\(.*\.mk\)\|\(.*\.ttcn3\)"
 alias G="grep -i --color "
 alias psaux='ps aux | grep regula'
 alias line="echo -e \"------------------------------------------------------------------------------------------------------------------------------------------\" "
-alias gf=' grep -v "base\|svn\|.swp\|.swo\|.rej\|.orig\|.ysm\|.swn\|.edited\|.swm\|.swl\|.t3xf'  #grep filter
+alias gf=' grep -v "base\|svn\|.swp\|.swo\|.rej\|.orig\|.ysm\|.swn\|.edited\|.swm\|.swl\|.t3xf"' #grep filter
 alias sedfiles="find . -iname \"*.[hc]pp\" -or -iname \"*.ttcn3\" | xargs sed -i\"*.back\" "
 
 alias gs='gvim --servername GVIM'
