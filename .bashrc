@@ -3,6 +3,7 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 
 . ~/.bash_config/config/colors.bash
+. ~/.bash_config/config/PS1.bash
 
 export COLORTERM=1
 export SHELL=/bin/bash
