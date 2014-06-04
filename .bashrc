@@ -2,8 +2,14 @@
 #                       General Config
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 . ~/.bash_config/config/colors.bash
 . ~/.bash_config/config/PS1.bash
+. ~/.bash_config/config/bindings.bash
 
 export COLORTERM=1
 export SHELL=/bin/bash
