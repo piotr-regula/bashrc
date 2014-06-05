@@ -19,14 +19,18 @@ alias gs='gvim --servername GVIM'
 alias gvimRemoteOpen=' gvim --servername GVIM --remote-send "<Esc>:split<Cr>" && gvim --servername GVIM --remote '
 alias VL='root&vimlog logs/SCTs/`ls -lart logs/SCTs/ | tr -s " " |cut -d" " -f9  | tail -n1`'
 
+#apps aliases
+alias vue="java -jar ~/programs/VUE/VUE.jar >/dev/null 2>&1"
+
+#VCS aliases
 alias co="svn co"
 alias up="svn update"
 alias update="svn update"
 alias commit="svn commit"
 alias status="svn st"
-alias st="svn st -q --ignore-externals"
+alias svnst="svn st -q --ignore-externals"
 alias add="svn add"
-alias diff="svn diff | colordiff"
+alias svndiff="svn diff | colordiff"
 alias diffrev="svn diff -c"
 alias ci="svn ci -m"
 alias log="svn log -l"
@@ -36,4 +40,7 @@ alias logppl="log 10000 | G -A 2 -B 2 "
 
 alias pull="git pull"
 alias push="git push"
+alias diff="git diff | gvim -"
+alias ci="git commit -m "
+alias st="git status"
 
