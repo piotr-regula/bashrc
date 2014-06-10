@@ -21,6 +21,8 @@ alias VL='root&vimlog logs/SCTs/`ls -lart logs/SCTs/ | tr -s " " |cut -d" " -f9 
 
 #apps aliases
 alias vue="java -jar ~/programs/VUE/VUE.jar >/dev/null 2>&1"
+alias img="eog "
+alias citrixcfg="/opt/Citrix/ICAClient/wfcmgr & "
 
 #VCS aliases
 alias co="svn co"
@@ -43,4 +45,3 @@ alias push="git push"
 alias diff="git diff | gvim -"
 alias ci="git commit -m "
 alias st="git status"
-
