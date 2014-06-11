@@ -7,10 +7,12 @@ case $- in
       *) return;;
 esac
 
-. ~/.bash_config/config/colors.bash
-. ~/.bash_config/config/PS1.bash
-. ~/.bash_config/config/bindings.bash
-. ~/.bash_config/config/variableExports.bash
+export BASH_CONFIG_PATH=~/.bash_config/
+
+. $BASH_CONFIG_PATH/config/colors.bash
+. $BASH_CONFIG_PATH/config/PS1.bash
+. $BASH_CONFIG_PATH/config/bindings.bash
+. $BASH_CONFIG_PATH/config/variableExports.bash
 
 export COLORTERM=1
 export SHELL=/bin/bash
@@ -33,8 +35,8 @@ export INDENT=4
 #                       Other
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
 
-. ~/.bash_config/aliases.bash
-. ~/.bash_config/utilityFunctions.bash
-if [ -f ~/.bash_config/cplane/workrc.bash ]; then
-    . ~/.bash_config/cplane/workrc.bash
+. $BASH_CONFIG_PATH/aliases.bash
+. $BASH_CONFIG_PATH/utilityFunctions.bash
+if [ -f $BASH_CONFIG_PATH/cplane/workrc.bash ]; then
+    . $BASH_CONFIG_PATH/cplane/workrc.bash
 fi

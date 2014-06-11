@@ -1,4 +1,4 @@
-. ~/.bash_config/utilityFunctions.bash
+. $BASH_CONFIG_PATH/utilityFunctions.bash
 
 if [ -z "$PS1" ]; then
     export PS1=
