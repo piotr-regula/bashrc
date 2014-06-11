@@ -35,4 +35,6 @@ export INDENT=4
 
 . ~/.bash_config/aliases.bash
 . ~/.bash_config/utilityFunctions.bash
-
+if [ -f ~/.bash_config/cplane/workrc.bash ]; then
+    . ~/.bash_config/cplane/workrc.bash
+fi
