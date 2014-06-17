@@ -88,18 +88,51 @@ function gvimf()
 function f()
 {
     if [ $# == 2 ]; then
-    find $1  -iname '*'$2'*'  ;
+        find $1  -iname '*'$2'*'  ;
     else
-    find .  -iname '*'$*'*' | gf ;
+        find .  -iname '*'$*'*' | gf ;
     fi
 }
 
 function Find()
 {
     if [ $# == 2 ]; then
-    find $1 -type f -iname '*'$2'*'  ;
+        find $1 -type f -iname '*'$2'*'  ;
     else
-    find . -type f -iname '*'$*'*'  ;
+        find . -type f -iname '*'$*'*'  ;
     fi
 }
 
+
+#VCS func
+function isGit()
+{
+    git ls-files &> /dev/null
+}
+
+function ci()
+{
+    if ! isGit; then
+        svn ci -m "$*"
+    else
+        git ci -m "$*"
+    fi
+}
+
+function st()
+{
+    if ! isGit; then
+        svn st
+    else
+        git status
+    fi
+}
+
+function diff()
+{
+    if ! isGit; then
+        svn diff | gvim -
+    else
+        git diff | gvim -
+    fi
+}
