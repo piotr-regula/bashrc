@@ -23,7 +23,8 @@ alias VL='root&vimlog logs/SCTs/`ls -lart logs/SCTs/ | tr -s " " |cut -d" " -f9 
 alias vue="java -jar ~/programs/VUE/VUE.jar >/dev/null 2>&1"
 alias img="eog "
 alias citrixcfg="/opt/Citrix/ICAClient/wfcmgr & "
-
+alias citrixcfg="/opt/Citrix/ICAClient/wfcmgr & "
+alias op="xdg-open"
 #VCS aliases
 alias co="svn co"
 alias up="svn update"
