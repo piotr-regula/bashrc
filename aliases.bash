@@ -25,6 +25,7 @@ alias img="eog "
 alias citrixcfg="/opt/Citrix/ICAClient/wfcmgr & "
 alias citrixcfg="/opt/Citrix/ICAClient/wfcmgr & "
 alias op="xdg-open"
+alias umlet="java -jar ~/programs/Umlet/umlet.jar &>/dev/null &"
 #VCS aliases
 alias co="svn co"
 alias up="svn update"

@@ -77,7 +77,7 @@ function g()
 
 function gnot()
 {
-    grep -rin $1 . | grep -vi test
+    grep -rin $1 . | grep -vi test | grep -i $1
 }
 
 function gvimf()
