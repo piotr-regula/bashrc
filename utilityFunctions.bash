@@ -72,12 +72,12 @@ function logppl()
 
 function g()
 {
-    grep -rin $1 .
+    grep -rin "$*" .
 }
 
 function gnot()
 {
-    grep -rin $1 . | grep -vi test | grep -i $1
+    grep -rin "$*" . | grep -vi test | grep -i $1
 }
 
 function gvimf()
