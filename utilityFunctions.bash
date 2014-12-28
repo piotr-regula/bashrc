@@ -136,3 +136,8 @@ function diff()
         git diff | gvim -
     fi
 }
+
+function notifyLastCommandResult()
+{
+     [[ $? == 0 ]] && notify.py SCT_RUN success sct build finished || notify.py SCT_RUN failed sct build finished
+}

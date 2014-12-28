@@ -18,6 +18,7 @@ alias sedfiles="find . -iname \"*.[hc]pp\" -or -iname \"*.ttcn3\" | xargs sed -i
 alias gs='gvim --servername GVIM'
 alias gvimRemoteOpen=' gvim --servername GVIM --remote-send "<Esc>:split<Cr>" && gvim --servername GVIM --remote '
 alias VL='root&vimlog logs/SCTs/`ls -lart logs/SCTs/ | tr -s " " |cut -d" " -f9  | tail -n1`'
+alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 
 #apps aliases
 alias vue="java -jar ~/programs/VUE/VUE.jar >/dev/null 2>&1"
