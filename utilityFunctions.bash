@@ -28,6 +28,8 @@ function extract()
      fi
 }
 
+#dtrx for recursive extract
+
 function myinfo()   # Get current host related info.
 {
     echo -e "\nYou are logged on ${BLUE}$HOST"
@@ -94,6 +96,11 @@ function f()
     fi
 }
 
+function fcpp()
+{
+    f $* | grep cpp
+}
+
 function Find()
 {
     if [ $# == 2 ]; then
@@ -139,5 +146,5 @@ function diff()
 
 function notifyLastCommandResult()
 {
-     [[ $? == 0 ]] && notify.py SCT_RUN success sct build finished || notify.py SCT_RUN failed sct build finished
+     [[ $? == 0 ]] && notify.py entity run success - build finished || notify.py entity run failed - build finished
 }

@@ -44,3 +44,5 @@ alias logppl="log 10000 | G -A 2 -B 2 "
 
 alias pull="git pull"
 alias push="git push"
+alias fuck='sudo $(history -p \!\!)' 
+alias :q="exit"
