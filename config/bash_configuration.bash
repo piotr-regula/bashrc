@@ -20,7 +20,6 @@ shopt -s cmdhist # Save multi-line commands as one command
 PROMPT_COMMAND='history -a' # Record each line as it gets issued
 #MISC
 export COLORTERM=1
-export GREP_OPTIONS="-rIs --exclude=\*.svn\* --exclude=\*.git\*  --color=auto" GREP_COLOR='1;32'
 export PATH=~/devTools:$PATH
 export PATH=~/devTools/devToolTeamRepo:$PATH
 export INDENT=4

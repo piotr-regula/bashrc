@@ -1,3 +1,4 @@
+alias grep="grep -rIs --exclude=\*.svn\* --exclude=\*.git\*  --color=auto" GREP_COLOR='1;32'
 alias cls=clear
 alias bashrc="$EDITOR ~/.bashrc"
 alias vimrc="$EDITOR ~/.vimrc"
