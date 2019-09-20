@@ -74,12 +74,12 @@ function logppl()
 
 function g()
 {
-    grep -rin "$*" .
+    grep -rin "$*" . --color=always
 }
 
 function gnot()
 {
-    grep -rin "$*" . | grep -vi test | grep -i $1
+    grep -rin "$*" . --color=always | grep -vi test
 }
 
 function gvimf()
@@ -138,9 +138,9 @@ function st()
 function diff()
 {
     if ! isGit; then
-        svn diff | gvim -
+        svn diff . | gvim -
     else
-        git diff | gvim -
+        git diff . | gvim -
     fi
 }
 
@@ -148,3 +148,4 @@ function notifyLastCommandResult()
 {
      [[ $? == 0 ]] && notify.py entity run success - build finished || notify.py entity run failed - build finished
 }
+

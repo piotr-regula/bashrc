@@ -94,3 +94,4 @@ else
     LightCyan="$(tput bold ; tput setaf 6)"
     NC="$(tput sgr0)" # No Color
 fi
+

@@ -1,0 +1,7 @@
+# ignore case
+set completion-ignore-case
+# don't display full name when showing possible completions
+set completion-prefix-display-length 2
+# show possible completions after pressing tab once
+set show-all-if-ambiguous on
+set show-all-if-unmodified on

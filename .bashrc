@@ -13,22 +13,9 @@ export BASH_CONFIG_PATH=~/.bash_config/
 . $BASH_CONFIG_PATH/config/PS1.bash
 . $BASH_CONFIG_PATH/config/bindings.bash
 . $BASH_CONFIG_PATH/config/variableExports.bash
+. $BASH_CONFIG_PATH/config/bash_configuration.bash
 
-export COLORTERM=1
 export SHELL=/bin/bash
-export HISTFILE=$HOME/.bash_history
-export HISTSIZE=9000
-HISTCONTROL=ignoredups:erasedups:ignorespace # don't put duplicate lines in the history. See bash(1) for more options
-export HISTIGNORE="pwd:ls:lss:cls:bashrc:vimrc"
-
-export VISUAL='gvim'
-export EDITOR=$VISUAL
-export WINEDITOR=$EDITOR
-export GREP_OPTIONS="-rIs --exclude=\*.svn\* --exclude=\*.git\*  --color=auto" GREP_COLOR='1;32'
-export PATH=~/devTools:$PATH
-export PATH=~/devTools/devToolTeamRepo:$PATH
-
-export INDENT=4
 
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
@@ -40,3 +27,11 @@ export INDENT=4
 if [ -f $BASH_CONFIG_PATH/cplane/workrc.bash ]; then
     . $BASH_CONFIG_PATH/cplane/workrc.bash
 fi
+
+PATH="/home/suzu/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/home/suzu/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/suzu/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/suzu/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/suzu/perl5"; export PERL_MM_OPT;
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
